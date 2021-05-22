@@ -1,0 +1,296 @@
+.container {
+  width: 100%;
+  box-sizing: border-box;
+  /* min-height: 100vh; */
+}
+
+.topSection {
+  /* background: linear-gradient(
+      rgba(21, 81, 171, .8), 
+      rgba(21, 81, 171, .8)
+    ), url(../../assets/Landing/background.png); */
+  opacity: 1;
+  position: relative;
+  background-position: cover;
+  height: 37rem;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  background:  linear-gradient(
+      rgba(5, 56, 133, 0.85), 
+      rgba(21, 81, 171, .85)
+    ), url(../../assets/Landing/background.png);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: overlay;
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.topSectionText {
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 1.5rem;
+  width: 60%;
+  color: #fff;
+  opacity: 1;
+  /* margin-bottom: 2rem; */
+}
+
+/* .topSectionBlink{
+    width: 50rem;
+  animation: typing 3s steps(22), blink .5s step-end infinite alternate;
+  white-space: wrap;
+  margin: auto;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: Poppins;
+  font-size: 1.69rem;
+}
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  } */
+
+.exploreButton {
+  background-color: #43c117;
+  outline: none;
+  border: none;
+  border-radius: 0.7rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-family: Poppins;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.exploreButton:hover {
+  background-color: #297c0b;
+}
+
+.middleSection {
+  text-align: center;
+  font-family: Poppins;
+  margin-top: 5rem;
+}
+
+.middleSectionText {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1551ab;
+  line-height: 2.8rem;
+  font-style: none;
+}
+
+.middleSectionContainer {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  color: #fff;
+  align-items: center;
+}
+
+.middleSectionCard {
+  background-color: #398edd;
+  width: 17rem;
+  height: 11rem;
+  border-radius: 0.8rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  opacity: 1;
+}
+
+.middleSectionCardHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  opacity: 1;
+  font-size: 1.1rem;
+  font-family: Poppins;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-right: 4.1rem;
+  margin-left: 4.1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 0.14rem solid #fff;
+}
+
+.logo {
+  height: 1.3rem;
+  width: 1.3rem;
+  color: #fff;
+  margin-right: 0.5rem;
+}
+
+.cardText {
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin-top: 0.8rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  font-family: Poppins;
+}
+
+.bottomSection {
+  bottom: 0;
+  width: 100%;
+  height: 20rem;
+  background-image: 
+    url('../../assets/Landing/footer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.footerOverlayOne{
+    height: 100%;
+    width: 100%;
+    z-index: 32;
+    bottom: 0;
+    background-color: #032253;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerOverlay{
+    position: absolute;
+    /* mix-blend-mode: overlay; */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    background-color: #113264;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsLetter {
+  display: flex;
+  flex-direction: row;
+  height: 5rem;
+  font-size: 1rem;
+  font-family: Poppins;
+  margin-top: 2rem;
+  color: #fff;
+  opacity: 1;
+}
+
+.newsLetterHeader {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  font-family: Poppins;
+  opacity: 1;
+}
+
+.newsLetterFooter {
+  font-size: 0.9rem;
+  font-weight: 100;
+  color: #fff;
+  margin-top: 0.5rem;
+  opacity: 1;
+}
+
+.emailField {
+  border-bottom-left-radius: 1.3rem;
+  border-top-left-radius: 1.3rem;
+  height: 2.5rem;
+  width: 20rem;
+  outline: none;
+  font-family: Poppins;
+  padding-left: 1rem;
+  border: none;
+  opacity: 1;
+}
+
+.emailButton {
+  border-top-right-radius: 1.3rem;
+  border-bottom-right-radius: 1.3rem;
+  height: 2.5rem;
+  width: 7rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: #43c117;
+  margin-left: 0.5rem;
+  opacity: 1;
+}
+
+.emailButton:hover {
+  background-color: #297c0b;
+}
+
+/* Responsive design for mobile */
+@media screen and (max-width: 600px) {
+  .container{
+    min-height: 100vh;
+  }
+
+  .middleSectionContainer{
+    flex-direction: column;
+    /* margin: 1rem; */
+    margin-top: 2rem;
+  }
+
+  .middleSectionCard{
+    margin: 1rem;
+  }
+
+  .middleSectionText{
+    font-size: 1.7rem;
+  }
+
+  .newsLetterHeader{
+    font-size: 1.5rem;
+  }
+
+  .newsLetterFooter{
+    font-size: 0.8rem;
+  }
+
+  .bottomSection{
+    height: 15rem;
+  }
+  .emailField{
+    width: 15rem;
+    height: 2.3rem;
+  }
+
+  .emailButton{
+    width: 5rem;
+    height: 2.3rem;
+  }
+}

@@ -1,0 +1,31 @@
+@import '../../styles/shared.scss';
+
+.visually_hidden {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.label {
+  font-size: to-rem(14);
+}
+
+.input {
+  border: to-rem(1) solid var(--color_grayVarFive);
+  border-radius: to-rem(3);
+  color: var(--color_grayVar10);
+  font-size: to-rem(14);
+  height: to-rem(50);
+  // padding-left: 0.5rem;
+  margin-bottom: to-rem(30);
+  outline: none;
+  // outline-color: var(--color_grayVar8);
+  padding: to-rem(10 16);
+  width: 100%;
+}

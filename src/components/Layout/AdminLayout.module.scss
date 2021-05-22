@@ -1,0 +1,17 @@
+@import '../../styles/shared.scss';
+
+.container {
+    width: 100%;
+    // min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    opacity: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}

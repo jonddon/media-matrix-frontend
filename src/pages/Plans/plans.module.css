@@ -1,0 +1,49 @@
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image:
+    url('../../assets/Plans/wave.svg');
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    overflow-y: hidden;
+}
+
+.welcomeText{
+    color: #1551AB;
+    font-family: Poppins;
+    font-weight: 100;
+    font-size: 1.2rem;
+    margin-top: 3.5rem;
+    text-align: center;
+}
+
+.body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+/* .svg{
+    z-index: 1;
+    width: 100%;
+    height: 30rem;
+    color: #1551AB;
+} */
+
+@media screen and (max-width: 600px) {
+    .container{
+        overflow-y: scroll;
+        /* min-height: 100vh; */
+    }
+
+    .welcomeText{
+        font-size: 1.08rem;
+    }
+
+    .body{
+        flex-direction: column;
+        margin-top: 1.8rem;
+    }
+}

@@ -1,0 +1,78 @@
+{
+  "name": "media-matrix-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.21.1",
+    "http-proxy-middleware": "^1.0.6",
+    "jspdf": "^2.3.1",
+    "jspdf-autotable": "^3.5.14",
+    "node-sass": "^5.0.0",
+    "prettier": "^2.2.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-history": "^0.18.2",
+    "react-icons": "^4.2.0",
+    "react-loader-spinner": "^4.0.0",
+    "react-redux": "^7.2.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.2",
+    "react-select": "^4.2.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^5.2.1",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --watchAll=false",
+    "test:coverage": "yarn test --coverage",
+    "eject": "react-scripts eject",
+    "stylelint": "stylelint src/**/**/*.scss",
+    "precommit": "yarn run lint-staged",
+    "lint": "eslint --debug 'src/**/*.{js,jsx,ts,tsx}' --fix"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "plugin:jsx-a11y/recommended"
+    ]
+  },
+  "lint-staged": {
+    "*.{scss}": [
+      "stylelint --fix"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint && yarn test && lint-staged"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^5.0.9",
+    "lint-staged": "^10.5.4",
+    "pre-commit": "^1.2.2",
+    "stylelint": "^13.10.0",
+    "stylelint-order": "^4.1.0"
+  },
+  "proxy": "https://media-matrix-service.herokuapp.com/users/"
+}

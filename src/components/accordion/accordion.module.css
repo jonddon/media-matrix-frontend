@@ -1,0 +1,73 @@
+.card{
+    height: 20rem;
+    width: 15rem;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+}
+
+.cardOne{
+    height: 7rem;
+    width: 15rem;
+    margin-right: 0.7rem;
+    margin-left: 0.7rem;
+}
+
+.cardHeader{
+    display: flex;
+    flex-direction: row;
+    background-color: #43C117;
+    height: 5rem;
+    width: 100%;
+    color: #fff;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 1rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    padding: 1rem;
+}
+
+.cardHeaderOne{
+    display: flex;
+    flex-direction: row;
+    background-color: #43C117;
+    height: 5rem;
+    width: 100%;
+    color: #fff;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 1rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.logo{
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+.logoTwo{
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+}
+
+.cardBody{
+    border: 0.1rem solid #878787;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 1rem;
+    color: #878787;
+    font-weight: 300;
+    font-family: Poppins;
+    font-size: 0.8rem;
+}
+
+.cardBodyOne{
+    display: none;
+    /* z-index: -1; */
+}
